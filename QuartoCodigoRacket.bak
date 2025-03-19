@@ -1,0 +1,36 @@
+#lang racket
+
+9999 ;inteiros
+
+#b111 ;binário => 7
+
+#o111 ;octal => 73
+
+#x111 ;hexa => 273
+
+3.14 ;reais
+
+6.02e+23 ;racionais
+
+1/2 ;racionais
+
+1+2i ;números complexos
+
+; operação com números complexos
+(define z1 6+5i)
+(define z2 2-i)
+; no interpretador coloque (+ z1 z2)
+
+;ou
+(+ 6+5i 2-i)
+
+; operação com binários
+(+ #b111 #b100) ;mesmo que 7+4 = 11
+
+
+; operação com octal
+(- #o62 #o30) ;mesmo que 50 - 24 = 26
+
+
+; operação com octal e binário
+(- #o100 #b1110) ;mesmo que 64 - 14 = 50
