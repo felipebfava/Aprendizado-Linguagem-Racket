@@ -1,0 +1,65 @@
+
+;#lang racket
+#lang slideshow
+
+;Symbol
+
+(symbol? 'Apple) ;#t
+
+(char? #\A) ;#t
+
+(string? "Apple") ;#t
+
+;construct, usado para criar estrutura de dados
+(cons 1 2) ; '(1 . 2)
+
+(cons 1 '())
+(cons "head" empty)
+(cons "head" null)
+
+;possui a estrutura car e cdr
+;car é usado como header da lista e cdr o tail (cauda)
+;qualquer elemento após o header é a cauda
+
+(car(cons 1 2)) ;1
+(cdr(cons 1 2)) ;2
+
+(list (+ 3 2) (* 6 3))
+; ou
+'(5 18)
+
+'() ;lista vazia
+
+'(1 2 "teste") ;com diferentes tipos
+
+;definir # lang slideshow
+(list (circle 10) (filled-rectangle 10 20))
+
+;adicionar elementos
+(append '(1 2) '(3 4)) ;lista + lista
+(append '(1 2) '() '(3 4)) ;lista + lista vazia + lista
+
+;remover elementos
+(remove 3 '(1 2 3 4))
+
+;reverter elementos
+(reverse '(1 2 3 4))
+
+;tamanho da lista
+(length '(1 2 3 4))
+(length '())
+
+;retorna os n primeiros elementos
+(take '(1 2 3 4)2)
+
+(drop '(1 2 3 4)3)
+
+;encontre o segundo elemento da lista
+(car(cdr(list 1 2 3 4 5))) ;2
+
+;retorna o primeiro elemento
+(first '(4 5)) ;4
+
+;retorna todos os elementos menos o primeiro
+(rest '(6 7 8 9 10))
+
