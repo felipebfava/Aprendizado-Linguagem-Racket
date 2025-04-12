@@ -11,3 +11,5 @@ No terceiro exemplo de código trago funcionalidades básicas usadas na linguage
 No quarto exemplo de código trago funcionalidades de conhecimento básico que são usadas em racket, como manipulação de strings, tipos de dados suportados e operações com esses dados.
 
 No quinto exemplo de código trago algumas estruturas condicionais possíveis da linguagem.
+
+No arquivo ConexaoBD mostro vários tipos de conexões envolvendo os seguintes bancos relacionais: i) PostgreSQL; ii) MySQL, e; iii) SQLite. Bem como exemplos de como fazer consultas usando linguagem SQL.
